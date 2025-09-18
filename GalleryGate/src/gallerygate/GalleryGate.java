@@ -1,20 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package gallerygate;
 
-/**
- *
- * @author Michy
- */
-public class GalleryGate {
+import login.Login;
 
-    /**
-     * @param args the command line arguments
-     */
+public class GalleryGate {
     public static void main(String[] args) {
-        // TODO code application logic here
+        // Start the application by showing the login page
+        Login loginPage = new Login();
+        loginPage.setVisible(true);
     }
-    
 }
