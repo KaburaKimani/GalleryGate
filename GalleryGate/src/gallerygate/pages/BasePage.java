@@ -33,7 +33,7 @@ public class BasePage extends JFrame {
         return headerPanel;
     }
     
-    protected JPanel createNavigation() {
+    protected JPanel createNavigationPanel() {
         JPanel navPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
         navPanel.setBackground(new Color(230, 230, 250));
         navPanel.setBorder(BorderFactory.createEmptyBorder(10, 20, 10, 20));
@@ -47,5 +47,13 @@ public class BasePage extends JFrame {
         button.setBorder(BorderFactory.createEmptyBorder(5, 10, 5, 10));
         button.setFocusPainted(false);
         return button;
+    }
+
+    protected void showError(String message) {
+        JOptionPane.showMessageDialog(this, message, "Error", JOptionPane.ERROR_MESSAGE);
+    }
+
+    protected void showInfo(String message) {
+        JOptionPane.showMessageDialog(this, message, "Success", JOptionPane.INFORMATION_MESSAGE);
     }
 }

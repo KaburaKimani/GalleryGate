@@ -88,6 +88,9 @@ public class GalleryGate {
                 case "abstract":
                     currentPage = new AbstractPage(this);
                     break;
+                case "upload":
+                    currentPage = new UploadPage(this);
+                    break;
                 case "login":
                     currentPage = new Login();
                     break;
